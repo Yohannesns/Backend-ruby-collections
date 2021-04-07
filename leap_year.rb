@@ -8,7 +8,7 @@ starting_year = gets.chomp
 puts "Enter ending year"
 ending_year = gets.chomp
 
-years = (starting_year..ending_year).to_a
+years = (starting_year.to_i..ending_year.to_i).to_a
 
 years.each do |year| 
     if ((year % 4 == 0 )&& (year % 100 != 0 ))|| (year % 400 == 0) 
